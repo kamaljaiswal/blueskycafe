@@ -16,9 +16,9 @@ class LeafletMap extends React.Component {
   }
 
   static defaultProps = {
-    position: [55.92077,-4.33371],
-    zoom: 13,
-    markerText: ""
+    position: [55.907349, -3.258030],
+    zoom: 18,
+    markerText: "Dantes"
   }
 
   render() {

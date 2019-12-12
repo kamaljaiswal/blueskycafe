@@ -1,0 +1,36 @@
+header{
+  padding: 15px 20px;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  background-color: $grey;
+  .logo {
+    @include logo
+  }
+  .burgerMenu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 15px;
+    right: 20px;
+    height: 40px;
+    width: 60px;
+    z-index: 300;
+    cursor: pointer;
+    .line {
+      position: relative;
+      background: #000;
+      width: 30px;
+      height: 2px;
+      transition: all 0.2s ease;
+    }
+    .line2 {
+      margin-top: 6px;
+    }
+    .line3 {
+      margin-top: 6px;
+    }
+  }
+}

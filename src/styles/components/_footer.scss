@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  @include hours;
+  @include contact;
+  .logo {
+    @include logo;
+    margin: 60px 0 30px;
+  }
+  .contactFooter__title {
+    margin-top: 30px;
+  }
+  .hoursFooter {
+    margin-bottom: 60px;
+    .hoursFooter__title {
+      margin-top: 30px;
+    }
+  }
+}

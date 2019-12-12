@@ -1,13 +1,14 @@
 @import './utils/variables';
-
-@import './pages/index';
-@import './pages/about';
-@import './pages/contact';
-@import './pages/gallery';
-@import './pages/menu';
+@import './utils/mixins';
 
 @import './components/footer';
 @import './components/header';
 @import './components/layout';
 @import './components/leafletmap';
 @import './components/sideDrawer';
+
+@import './pages/index';
+@import './pages/about';
+@import './pages/contact';
+@import './pages/gallery';
+@import './pages/menu';

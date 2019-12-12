@@ -1,0 +1,86 @@
+@mixin homeSection {
+  text-align: center;
+  h2 {
+
+  }
+  .content {
+
+    .content__body {
+      margin-bottom: 20px;
+    }
+    .content__button {
+      display: block;
+      border: 1px solid $black;
+      padding: 10px 30px;
+      margin-bottom: 120px;
+      text-align: center;
+      font-size: $ms-size;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
+
+@mixin logo {
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid;
+  padding: 0 5px;
+  font-size: $ml-size;
+  display: inline-block;
+}
+
+@mixin hours {
+  .table {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .table__days {
+      list-style-type: none;
+      display: block;
+      padding: 0 15px 0 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr, 1fr, 2fr, 2fr;
+      gap: 10px;
+      li {
+        text-align: end;
+        font-size: $ms-size;
+      }
+      li:nth-child(3) {
+        grid-row: 3;
+        height: 56px;
+      }
+      li:nth-child(4) {
+        grid-row: 4;
+        height: 56px;
+      }
+    }
+    .table__hours {
+      list-style-type: none;
+      margin: 0 0 0 15px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr, 1fr, 2fr, 2fr;
+      gap: 10px;
+      li {
+        text-align: start;
+        font-size: $ms-size;
+      }
+    }
+  }
+}
+
+@mixin contact {
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    .contactFooter__title {
+      display: block;
+    }
+    .contactFooter__body {
+      font-size: $ms-size;
+      margin-bottom: 5px;
+    }
+
+  }
+}

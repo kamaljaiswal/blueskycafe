@@ -1,0 +1,110 @@
+main {
+  background-color: $white;
+}
+
+.hero {
+  position: relative;
+  height: calc(20vh + 45vh / 2);
+  width: 100%;
+  background-color: $grey;
+  .hero-image {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    margin: 0 auto;
+    z-index: 10;
+    .gatsby-image-wrapper {
+      height: 45vh;
+    }
+  }
+}
+
+.intro {
+  background-color: $blue;
+  color: #fff;
+  padding-bottom: calc(730px - 150px);
+  @include homeSection;
+  .chevron {
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    margin: 0 auto;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  h2 {
+    padding-top: calc(50vh + 70px);
+    color: $white;
+  }
+  .content {
+    .content__button {
+      border-color: $white;
+      color: $white;
+    }
+  }
+  .gallery {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .img1 {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .img2 {
+      height: 300px;      
+      width: 100%;
+    }
+    .img3 {
+      display: none;
+    }
+  }
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.indexMenu {
+  margin: 40vh 0 100px;
+  @include homeSection;
+}
+
+.reservation {
+  position: relative;
+  .img4 {
+    height: 300px;
+  }
+  .overlay {
+    background-color: #5f5f5f5e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+.findUs {
+  padding-top: 120px;
+  @include homeSection;
+  .content__address {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
