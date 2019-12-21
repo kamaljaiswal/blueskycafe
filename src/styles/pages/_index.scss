@@ -25,21 +25,31 @@ main {
   background-color: $blue;
   color: #fff;
   padding-bottom: calc(730px - 150px);
-  @include homeSection;
+  padding-top: calc(50vh + 70px);
   .chevron {
     width: 30px;
     position: absolute;
     left: 50%;
-    top: 50vh;
+    top: -60px;
     margin: 0 auto;
     transform: translateX(-50%) rotate(90deg);
   }
-  h2 {
-    padding-top: calc(50vh + 70px);
-    color: $white;
-  }
   .content {
+    text-align: center;
+    h2 {
+      color: $white;
+    }
+    .content__body {
+      margin-bottom: 20px;
+    }
     .content__button {
+      display: block;
+      border: 1px solid $black;
+      padding: 10px 30px;
+      margin-bottom: 120px;
+      text-align: center;
+      font-size: $ms-size;
+      text-decoration: none;
       border-color: $white;
       color: $white;
     }
@@ -48,7 +58,6 @@ main {
     position: absolute;
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     .img1 {
       height: 400px;
@@ -67,13 +76,34 @@ main {
 
 .container {
   width: 85%;
+  max-width: 1240px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .indexMenu {
   margin: 40vh 0 100px;
-  @include homeSection;
+  .content {
+    text-align: center;
+    h2 {
+      color: $black;
+    }
+    .content__body {
+      margin-bottom: 20px;
+    }
+    .content__button {
+      display: block;
+      border: 1px solid $black;
+      padding: 10px 30px;
+      margin-bottom: 120px;
+      text-align: center;
+      font-size: $ms-size;
+      text-decoration: none;
+      border-color: $black;
+      color: $black;
+    }
+  }
 }
 
 .reservation {
@@ -82,7 +112,7 @@ main {
     height: 300px;
   }
   .overlay {
-    background-color: #5f5f5f5e;
+    background-color: #8685859a;
     position: absolute;
     top: 0;
     left: 0;
@@ -97,14 +127,203 @@ main {
     h2 {
       color: $white;
     }
+    span {
+      font-family: Libre Baskerville;
+    }
   }
 }
 
 .findUs {
   padding-top: 120px;
-  @include homeSection;
-  .content__address {
-    display: block;
-    padding-bottom: 10px;
+  .content {
+    text-align: center;
+    margin-bottom: 120px;
+    h2 {
+      color: $black;
+    }
+    .content__body {
+      margin-bottom: 20px;
+    }
+    .content__button {
+      display: block;
+      border: 1px solid $black;
+      padding: 10px 30px;
+      text-align: center;
+      font-size: $ms-size;
+      text-decoration: none;
+      border-color: $black;
+      color: $black;
+    }
+    .content__address {
+      display: block;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/****************
+* MEDIA QUIERIES*
+****************/
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-bottom: calc(75px + 75vh/2);
+    .hero-image {
+      max-width: 1420px;
+      top: 75px;
+      .gatsby-image-wrapper {
+        height: 75vh;
+      }
+    }
+  }
+  .intro {
+    padding-bottom: 404px;
+    .container {
+      .chevron {
+
+      }
+    }
+    .content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 
+        "h2 ."
+        ". p"
+        ". a";
+      h2 {
+        grid-area: h2;
+        text-align: right;
+        font-size: $xxl-size;
+      }
+      .content__body {
+        grid-area: p;
+        text-align: left;
+        font-size: $ms-size;
+        color: $grey;
+      }
+      .content__button {
+        grid-area: a;
+        width: 300px;
+        margin-bottom: 0;
+      }
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 160px);
+      grid-template-areas:
+      ". . img3"
+      "img1 img2 img3"
+      "img1 img2 img3"
+      "img1 . .";
+      gap: 16px;
+      margin-top: 60px;
+
+      .gatsby-image-wrapper {
+        width: 100%;
+      }
+      .img1 {
+        height: 100%;
+        grid-area: img1;
+      }
+      .img2 {
+        height: 100%;
+        grid-area: img2;
+
+      }
+      .img3 {
+        display: inline-block;
+        height: 100%;
+        grid-area: img3 ;
+        
+      }
+    }
+  }
+  .indexMenu {
+    margin-top: 404px;
+    .container {
+      .content {
+        margin: 0 0 0 auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        ". h2"
+        "p ."
+        "a .";
+        h2 {
+          grid-area: h2;
+          text-align: left;
+          font-size: $xxl-size;
+          margin-bottom: 0;
+        }
+        .content__body {
+          grid-area: p;
+          text-align: right;
+          margin-bottom: 10px;
+          font-size: $ms-size;
+        }
+        .content__button {
+          grid-area: a;
+          width: 300px;
+          margin: 0 0 0 auto;
+        }
+      }
+    }
+  }
+  .reservation {
+    position: relative;
+    .img4 {
+      height: 400px;
+    }
+    .overlay {
+      h2 {
+        color: $white;
+        font-size: $xxl-size;
+      }
+      p {
+        font-size: $mm-size;
+      }
+      span {
+        font-size: $xxl-size;
+      }
+    }
+  }
+  .findUs {
+    padding-top: 120px;
+    .content {
+      text-align: unset;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+      "h2 ."
+      ". address"
+      ". body"
+      ". btn";
+      row-gap: 10px;
+      h2 {
+        color: $black;
+        grid-area: h2;
+        font-size: $xxl-size;
+        text-align: right;
+      }
+      .content__body {
+        margin-bottom: 0;
+        grid-area: body;
+        font-size: $ms-size;
+      }
+      .content__button {
+        grid-area: btn;
+        width: 300px;
+      }
+      .content__address {
+        padding-bottom: 0;
+        grid-area: address;
+        font-size: $ms-size;
+      }
+    }
   }
 }

@@ -1,10 +1,10 @@
 @mixin homeSection {
   text-align: center;
-  h2 {
-
-  }
   .content {
-
+    h2 {
+  
+    }
+    
     .content__body {
       margin-bottom: 20px;
     }
@@ -27,6 +27,8 @@
   padding: 0 5px;
   font-size: $ml-size;
   display: inline-block;
+  text-decoration: none;
+  color: $black;
 }
 
 @mixin hours {
@@ -45,6 +47,7 @@
       li {
         text-align: end;
         font-size: $ms-size;
+        margin-bottom: 0;
       }
       li:nth-child(3) {
         grid-row: 3;
@@ -65,6 +68,7 @@
       li {
         text-align: start;
         font-size: $ms-size;
+        margin-bottom: 0;
       }
     }
   }

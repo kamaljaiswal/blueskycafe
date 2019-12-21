@@ -1,14 +1,30 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const AboutPage = ({ data }) => {
+
+  return (
   <Layout>
     <SEO title="About" />
-    <h1>About Page</h1>
+    <section className="aboutHero">
+      
+    </section>
   </Layout>
-)
+  )
+}
 
+export const pageQuery = graphql`
+  query {
+    hero: file(relativePath: { eq: "table.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 export default AboutPage

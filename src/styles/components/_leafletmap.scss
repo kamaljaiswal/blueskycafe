@@ -1,8 +1,22 @@
-.leaflet-container {
-  height: 300px;
-  width: 100%;
-  z-index: 0;
-  @media screen and (min-width: 1024px) {
+.homeMap {
+  .leaflet-container {
     height: 300px;
+    width: 100%;
+    z-index: 0;
+    @media screen and (min-width: 1024px) {
+      height: 400px;
+    }
   }
-} 
+}
+
+.contactMap {
+  .leaflet-container {
+    height: 300px;
+    width: 100%;
+    z-index: 0;
+    @media screen and (min-width: 1024px) {
+      height: 100vh;
+      width: 50vw;
+    }
+  }
+}

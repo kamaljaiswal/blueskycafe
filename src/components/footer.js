@@ -28,7 +28,6 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <span>privacy policy</span>
     <span>website by Crolla Creations</span>
   </footer>
 )

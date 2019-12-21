@@ -20,22 +20,22 @@ const IndexPage = ({data}) => {
         <span className="chevron">
           <Img fluid={data.chevron.childImageSharp.fluid}/>
         </span>
-        <h2>Family Run Since 1997</h2>
         <aside className="content">
+          <h2>Family Run Since 1997</h2>
           <p className="content__body">Dantes is a modern, warm and friendly family-run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine, a fantastic à la carte menu, and seasonal daily specials. We offer al fresco dining and can cater for any size of party, with a private dining area for parties up to eight people</p>
           <Link to="/about" className="content__button" >More about us</Link>
         </aside>
         <div className="gallery">
           <Img fluid={data.pastaPortrait.childImageSharp.fluid} className="img1"/>
           <Img fluid={data.pork.childImageSharp.fluid} className="img2"/>
-          <Img fluid={data.scallopsLandscape.childImageSharp.fluid} className="img3"/>
+          <Img fluid={data.scallops.childImageSharp.fluid} className="img3"/>
         </div>
       </div>
     </div>
     <section className="indexMenu">
       <div className="container">
-        <h2>Modern Italian<br/>Cooking</h2>
         <aside className="content">
+          <h2>Modern Italian<br/>Cooking</h2>
           <p className="content__body">Dantes is a modern, warm and friendly family-run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine, a fantastic à la carte menu, and seasonal daily specials. We offer al fresco dining and can cater for any size of party, with a private dining area for parties up to eight people</p>
           <Link to="/menu" className="content__button" >More about us</Link>
         </aside> 
@@ -50,15 +50,17 @@ const IndexPage = ({data}) => {
       </div>
     </section>
     <section className="findUs container">
-      <h2>Where To Find Us</h2>
       <aside className="content">
+        <h2>Where To Find <br/> Us</h2>
         <span className="content__address">48-50 Bridge Road
         Colinton, EH13 0LQ</span>
         <p className="content__body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-        <Link to="/contact" className="content__button" >Get Directions</Link>
+        <a href="https://goo.gl/maps/FGipk86ehdi1Rmj47" rel="noreferrer" className="content__button" >Get Directions</a>
       </aside>
     </section>
-    <LeafletMap />
+    <section className="homeMap">
+      <LeafletMap />
+    </section>
   </Layout>
   )
 }
@@ -87,7 +89,7 @@ export const pageQuery = graphql`
     pork: file(relativePath: { eq: "pork.jpg" }) {
       ...fluidImage
     }
-    scallopsLandscape: file(relativePath: { eq: "scallops-dark.jpg" }) {
+    scallops: file(relativePath: { eq: "scallops.jpg" }) {
       ...fluidImage
     }
     wall1: file(relativePath: { eq: "wall1.jpg" }) {
