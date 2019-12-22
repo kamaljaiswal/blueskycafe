@@ -19,7 +19,7 @@ const GalleryPage = () => {
               id
               name
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 1280) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
@@ -44,7 +44,7 @@ const GalleryPage = () => {
       <div className="galleryContainer">
         <div className="text-row">
           <h2>Christmas and New Years opening times</h2>
-          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A officia deleniti saepe impedit temporibus doloremque voluptatem perferendis non excepturi esse repellat quos nihil ipsa similique, rem maxime dolorum sequi iste.</span>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A officia deleniti saepe impedit temporibus doloremque voluptatem perferendis non excepturi esse repellat quos nihil ipsa similique, rem maxime dolorum sequi iste.</p>
         </div>
         <div className="gallery-row">
           <Img
