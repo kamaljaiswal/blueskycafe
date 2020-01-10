@@ -1,5 +1,167 @@
-// .aboutHero {
+.aboutHero {
+  position: relative;
+  .aboutHero__image {
+    padding-top: 72px;
+    height: 100vh;
+    width: 100%;
+  }
+  .overlayContainer {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    height: calc(100vh - 72px);
+    width: 100%;
+    background: linear-gradient(#fffbfb6b, #ffffffed 75% , #FFF 100%);
+    .overlay {
+      height: calc(100vh - 72px);
+      width: 100wv;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .overlay__title {
+        font-size: $xxl-size;
+        text-align: center;
+        width: 70%;
+      }
+    }
+  }
+}
+.aboutMain {
+  text-align: center;
+  figcaption {
+    font-size: $s-size;
+    font-style: italic;
+    text-align: right;
+    padding-right: 5px;
+  }
+  .container {
+    width: 90%;
+  }
+  h2 {
+    font-size: $l-size;
+    margin-bottom: 1.8rem;
+  }
+  p {
+    margin-bottom: 1.8rem;
+    font-size: $m-size;
+    line-height: $ml-size;
+  }
+  .shops {
+    margin: 60px 0;
+  }
+  .aboutGrid {
+    display: flex;
+    flex-direction: column;
+    .block {
+      margin: 60px auto;
+      width: 90%;
+    }
+  }
+}
 
-//   .hero-image {
-//   }
-// }
+/****************
+* MEDIA QUIERIES*
+****************/
+
+@media screen and (min-width: 768px) {
+  .aboutMain {
+    .container {
+      width: 70%;
+    }
+    h2 {
+      font-size: $l-size;
+      margin-bottom: 1.8rem;
+    }
+    p {
+      margin-bottom: 1.8rem;
+      font-size: $m-size;
+      line-height: $ml-size;
+    }
+    .shops {
+      margin: 60px 0;
+    }
+    .aboutGrid {
+      display: flex;
+      flex-direction: column;
+      .block {
+        margin: 60px auto;
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutHero {
+    .aboutHero__image {
+    }
+    .overlayContainer {
+      .overlay {
+        .overlay__title {
+          font-size: $xxxl-size;
+          text-align: center;
+          width: 50%;
+        }
+      }
+    }
+  }
+  .aboutMain {
+    text-align: center;
+    figcaption {
+      font-size: $s-size;
+      font-style: italic;
+      text-align: right;
+      padding-right: 5px;
+    }
+    .container {
+      width: 50%;
+      max-width: 600px;
+    }
+    h2 {
+      font-size: $xl-size;
+      margin-bottom: 1.8rem;
+    }
+    p {
+      margin-bottom: 1.8rem;
+      font-size: $m-size;
+      line-height: $ml-size;
+    }
+    .shops {
+      margin: 60px auto;
+      max-width: 1000px;
+    }
+    .aboutGrid {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 1000px;
+      .row {
+        display: flex;
+        flex-direction: row;
+        .block {
+          margin: 60px auto;
+          width: 50%;
+          h2 {
+
+          }
+          p {
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+        figure {
+          width: 50%;
+          .gridImg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .row:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  
+}

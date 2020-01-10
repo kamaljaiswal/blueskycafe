@@ -19,7 +19,7 @@ const GalleryPage = () => {
               id
               name
               childImageSharp {
-                fluid(maxWidth: 1280) {
+                fluid(maxWidth: 1024) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
