@@ -1,0 +1,122 @@
+.menuContainer {
+  min-height: 100vh;
+  background-color: $white;
+  .menuHeaders {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: $black;
+        font-size: $mm-size;
+      }
+    }
+  }
+  .menu {
+    color: $black;
+    width: 90%;
+    margin: 60px auto 0;
+    h2 {
+      color: $black;
+    }
+    .menuList {
+      h3 {
+        font-family: lato;
+        color: $black;
+        margin: 30px 0 0;
+      }
+      .lineBreak {
+        width: 100%;
+        height: 4px;
+        background-color: $black;
+      }
+      .menuItemsContainer {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        .menuItem {
+          margin-top: 10px;
+          .menuItem__name {
+            font-weight: bold;
+          }
+          .menuItem__description {
+            margin: 10px 0;
+          }
+          .menuItem__price {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menuContainer {
+
+    .menuHeaders {
+      padding-top: 100px;
+      justify-content: center;
+      align-items: center;
+      li {
+        list-style-type: none;
+        a {
+          font-weight: bold;
+          font-size: $xxl-size;
+        }
+      }
+    }
+    .menu {
+      width: 90%;
+      margin: 60px auto 0;
+      h2 {
+      }
+      .menuList {
+        h3 {
+          margin: 60px 0 0;
+          font-size: $l-size;
+          display: inline-block;
+        }
+        .menuInfo {
+          margin-left: 10px;
+          font-size: $sm-size;
+        }
+        .lineBreak {
+          height: 4px;
+        }
+        .menuItemsContainer {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          .menuItems {
+            display: flex;
+            flex-direction: row;
+            .menuItem {
+              margin-top: 20px;
+              width: 25%;
+              min-height: 170px;
+              display: flex;
+              flex-direction: column;
+              .menuItem__name {
+                letter-spacing: -0.05rem;
+              }
+              .menuItem__description {
+                margin: 5px 5px 5px 0;
+                letter-spacing: -0.03rem;
+              }
+              .menuItem__price {
+                margin: auto 0 0 0;
+              }
+            }
+          }
+          .dottedLine {
+            border-top: 2px dashed $black;
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
