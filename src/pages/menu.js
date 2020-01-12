@@ -1,19 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import MenuNav from '../components/menuNav'
 
 const MenuPage = () => (
   <Layout>
-    <SEO title="Menu" />
+    <SEO title="Main Menu" />
     <div className="menuContainer">
-      <ul className="menuHeaders">
-        <li><Link to='/'>A LA CARTE</Link></li>
-        <li><Link to='/'>MID-WEEK</Link></li>
-        <li><Link to='/'>LUNCH</Link></li>
-        <li><Link to='/'>DRINKS</Link></li>
-      </ul>
+      <MenuNav/>
       <div className="menu">
         <h2>A LA CARTE MENU</h2>
         <div className="menuList">
@@ -52,6 +47,7 @@ const MenuPage = () => (
             </div>
           </div>
         </div>
+
         <div className="menuList">
           <h3>ANTIPASTI</h3>
           <div className="lineBreak"></div>
@@ -119,6 +115,7 @@ const MenuPage = () => (
 
         <div className="menuList">
           <h3>PRIMI</h3>
+          <span className="menuListInfo">Gluten free pasta availableon request. Half portions of certain pastas available on request</span>
           <div className="lineBreak"></div>
           <div className="menuItemsContainer">
             <div className="menuItems">
@@ -180,6 +177,7 @@ const MenuPage = () => (
 
         <div className="menuList">
           <h3>SECONDI</h3>
+          <span className="menuListInfo">All main courses served with your choice of garlic and rosemary sauteed potatoes, sea salt fries or salad</span>
           <div className="lineBreak"></div>
           <div className="menuItemsContainer">
             <div className="menuItems">
@@ -239,7 +237,7 @@ const MenuPage = () => (
 
         <div className="menuList">
           <h3>PIZZA</h3>
-          <span className="menuInfo">Other toppings available upon request along with childrens pizzas</span>
+          <span className="menuListInfo">Other toppings available upon request along with childrens pizzas</span>
           <div className="lineBreak"></div>
           <div className="menuItemsContainer">
             <div className="menuItems">
@@ -295,6 +293,50 @@ const MenuPage = () => (
                   <span className="menuItem__price">12.00</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="menuList">
+          <h3>CONTORNI</h3>
+          <div className="lineBreak"></div>
+          <div className="menuItemsContainer">
+            <div className="menuItems">
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Sautéed spinach in garlic butter</span>
+                    <span className="menuItem__price">3.70</span>
+                </div>
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Green beans with a hint of chilli</span>
+                    <span className="menuItem__price">3.70</span>
+                </div>
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Marinated peppers in olive oil and garlic</span>
+                    <span className="menuItem__price">3.70</span>
+                </div>
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Tenderstem broccoli with garlic and chilli</span>
+                    <span className="menuItem__price">4.00</span>
+                </div>
+              </div>
+              <div className="dottedLine"></div>
+              <div className="menuItems">
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Green Salad</span>
+                    <span className="menuItem__price">3.85</span>
+                </div>
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Mixed Salad</span>
+                    <span className="menuItem__price">3.85</span>
+                </div>
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">Rocket and Parmesan Salad</span>
+                    <span className="menuItem__price">4.25</span>
+                </div>
+                <div className="menuItem menuItem--noDescription">
+                    <span className="menuItem__name">French Fries</span>
+                    <span className="menuItem__price">3.00</span>
+                </div>
+              </div>
           </div>
         </div>
 

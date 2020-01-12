@@ -54,7 +54,7 @@ const IndexPage = ({data}) => {
         <h2>Where To Find <br/> Us</h2>
         <span className="content__address">48-50 Bridge Road
         Colinton, EH13 0LQ</span>
-        <p className="content__body">Free parking available infront of the restaurant with bus links with services 400, 30, 20</p>
+        <p className="content__body">Free parking available in front of the restaurant with bus links with services 10, 16 and 400</p>
         <a href="https://goo.gl/maps/FGipk86ehdi1Rmj47" rel="noreferrer" className="content__button" >Get Directions</a>
       </aside>
     </section>
