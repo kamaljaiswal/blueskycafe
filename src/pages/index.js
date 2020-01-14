@@ -57,7 +57,9 @@ const IndexPage = ({data}) => {
       </aside>
     </section>
     <section className="homeMap">
-      <LeafletMap />
+      {typeof window !== 'undefined' &&
+        <LeafletMap/>
+      }
     </section>
   </Layout>
   )

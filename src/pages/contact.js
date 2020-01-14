@@ -4,9 +4,11 @@ import LeafletMap from '../components/leafletmap'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactPage = () => (
+const ContactPage = () => {
+
+  return (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact"/>
     <div className="contactPage">
     <section className="contactContainer">
       <div className="contact">
@@ -32,10 +34,13 @@ const ContactPage = () => (
       </div>
     </section>
     <section className="contactMap">
-      <LeafletMap />
+      {typeof window !== 'undefined' &&
+        <LeafletMap/>
+      }
     </section>
     </div>
   </Layout>
-)
+  )
+}
 
 export default ContactPage
