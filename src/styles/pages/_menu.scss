@@ -13,8 +13,12 @@
       list-style-type: none;
       a {
         text-decoration: none;
-        color: $black;
+        color: $yellow;
         font-size: $mm-size;
+        font-weight: bold;
+      }
+      .active {
+        color: $blue;
       }
     }
   }
@@ -41,7 +45,7 @@
       .lineBreak {
         width: 100%;
         height: 4px;
-        background-color: $black;
+        background-color: $yellow;
       }
       .menuItemsContainer {
         margin-top: 10px;
@@ -80,9 +84,10 @@
         a {
           font-weight: bold;
           font-size: $xxl-size;
+          transition: 0.2s;
         }
         a:hover {
-          text-decoration: underline;
+          color: $blue;
         }
       }
     }

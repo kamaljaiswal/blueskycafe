@@ -43,8 +43,8 @@ const GalleryPage = () => {
     <Layout>
       <div className="galleryContainer">
         <div className="text-row">
-          <h2>Christmas and New Years opening times</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A officia deleniti saepe impedit temporibus doloremque voluptatem perferendis non excepturi esse repellat quos nihil ipsa similique, rem maxime dolorum sequi iste.</p>
+          <h2>Private Functions and Parties</h2>
+          <p>We can accommodate parties of any size and have a private dining area which can seat up to 8 people.</p>
         </div>
         <div className="gallery-row">
           <Img

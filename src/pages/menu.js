@@ -10,7 +10,6 @@ const MenuPage = () => (
     <div className="menuContainer">
       <MenuNav/>
       <div className="menu">
-        <h2>A LA CARTE MENU</h2>
         <div className="menuList">
           <h3>STUZZICHINI</h3>
           <div className="lineBreak"></div>

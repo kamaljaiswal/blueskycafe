@@ -12,7 +12,6 @@ const DrinksMenu = () => {
       <div className="menuContainer">
         <MenuNav/>
         <div className="menu">
-          <h2>DRINKS MENU</h2>
           <section className="menuList">
             <h3>COCKTAILS</h3>
             <div className="lineBreak"></div>

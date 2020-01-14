@@ -8,11 +8,10 @@ const MidWeekMenu = () => {
 
   return (
     <Layout>
-      <SEO title="Lunch Menu" />
+      <SEO title="Mid-Week Menu" />
       <section className="menuContainer">
         <MenuNav />
         <div className="menu">
-          <h2>MID-WEEK MENU</h2>
           <span className="menuInfo">Two courses £17.00</span>
           <span className="menuInfo">Available Tuesday, Wednesday, Thursday</span>
           <section className="menuList">

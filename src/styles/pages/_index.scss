@@ -25,7 +25,7 @@ main {
   background-color: $blue;
   color: #fff;
   padding-bottom: calc(730px - 150px);
-  padding-top: calc(50vh + 70px);
+  padding-top: 200px;
   .chevron {
     width: 30px;
     position: absolute;
@@ -172,12 +172,14 @@ main {
       max-width: 1420px;
       top: 75px;
       .gatsby-image-wrapper {
-        height: 75vh;
+        height: 90vh;
       }
     }
   }
   .intro {
     padding-bottom: 404px;
+    padding-top: calc(50vh + 70px);
+
     .container {
       .chevron {
 

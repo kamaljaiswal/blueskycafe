@@ -12,7 +12,6 @@ const LunchMenu = () => {
       <section className="menuContainer">
         <MenuNav />
         <div className="menu">
-          <h2>LUNCH MENU</h2>
           <span className="menuInfo">Two courses £11.50</span>
           <section className="menuList">
             <h3>PRIMI</h3>

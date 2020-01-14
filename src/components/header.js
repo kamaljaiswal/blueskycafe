@@ -4,6 +4,9 @@ import PropTypes from "prop-types"
 
 const Header = ({ siteTitle, parentCallback }) => {
   const [isOpen, changeState] = useState(false);
+  const lineColor1 = isOpen ? 'white line line1' : 'line line1';
+  const lineColor2 = isOpen ? 'white line line2' : 'line line2';
+  const lineColor3 = isOpen ? 'white line line3' : 'line line3';
 
   return (
   <div>
@@ -16,15 +19,15 @@ const Header = ({ siteTitle, parentCallback }) => {
         changeState(!isOpen);
         parentCallback(newValue);
       })}>
-        <span className="line line1"></span>
-        <span className="line line2"></span>
-        <span className="line line3"></span>
+        <span className={lineColor1}></span>
+        <span className={lineColor2}></span>
+        <span className={lineColor3}></span>
       </div>
     </div>
     <div className="desktopMenu">
       <nav>
         <span><Link to="/about">About</Link></span>
-        <span><Link to="/menu">Menu</Link></span>
+        <span><Link to="/menu">Menus</Link></span>
         <span><Link to="/" className="logo">{siteTitle}</Link></span>
         <span><Link to="/gallery">Gallery</Link></span>
         <span><Link to="/contact">Contact</Link></span>

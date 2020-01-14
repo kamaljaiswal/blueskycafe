@@ -24,16 +24,19 @@
     cursor: pointer;
     .line {
       position: relative;
-      background: #000;
+      background: $black;
       width: 30px;
       height: 2px;
-      transition: all 0.2s ease;
+      transition: all 0.5s ease;
     }
     .line2 {
       margin-top: 6px;
     }
     .line3 {
       margin-top: 6px;
+    }
+    .white {
+      background: $white;
     }
   }
 }

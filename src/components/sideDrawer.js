@@ -8,12 +8,14 @@ const SideDrawer = ({ menuOpen }) => {
   return (
     <nav className={menuClass}>
       <ul className="sideNavbar">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/menu'>Menu</Link></li>
-        <li><Link to='/gallery'>Gallery</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
+        <li><Link to='/' activeClassName="active" >Home</Link></li>
+        <li><Link to='/menu' activeClassName="active">Menu</Link></li>
+        <li><Link to='/gallery' activeClassName="active">Gallery</Link></li>
+        <li><Link to='/about' activeClassName="active">About</Link></li>
+        <li><Link to='/contact' activeClassName="active">Contact</Link></li>
       </ul>
+      <span className="logo">Dantes</span>
+      <span className="address">48-50 Bridge Road, Colinton</span>
     </nav>
   )
 }

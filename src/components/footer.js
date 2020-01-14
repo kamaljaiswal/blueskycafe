@@ -28,7 +28,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <span>website by Crolla Creations</span>
+    <span>website by <a href="https://www.crollacreations.com/">crollacreations</a></span>
   </footer>
 )
 

@@ -12,18 +12,16 @@ const IndexPage = ({data}) => {
     <SEO title="Home" />
     <section className="hero">
       <div className="hero-image">
-        <Img fluid={data.hero.childImageSharp.fluid}/>
+        <Img fluid={data.pork.childImageSharp.fluid}/>
       </div>
     </section>
     <div className="intro">
       <div className="container">
-        <span className="chevron">
-          <Img fluid={data.chevron.childImageSharp.fluid}/>
-        </span>
+        
         <aside className="content">
-          <h2>Family Run Since 1997</h2>
-          <p className="content__body">Dantes is a modern, warm and friendly family-run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine, a fantastic à la carte menu, and seasonal daily specials. We offer al fresco dining and can cater for any size of party, with a private dining area for parties up to eight people</p>
-          <Link to="/about" className="content__button" >More about us</Link>
+          <h2>Modern Italian<br/>Cooking</h2>
+          <p className="content__body">Dantes is a family run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine, a fantastic à la carte menu, and seasonal daily specials. We offer al fresco dining and can cater for any size of party, with a private dining area for parties up to eight people</p>
+          <Link to="/menu" className="content__button" >View Menus</Link>
         </aside>
         <div className="gallery">
           <Img fluid={data.pastaPortrait.childImageSharp.fluid} className="img1"/>
@@ -35,9 +33,9 @@ const IndexPage = ({data}) => {
     <section className="indexMenu">
       <div className="container">
         <aside className="content">
-          <h2>Modern Italian<br/>Cooking</h2>
-          <p className="content__body">Dantes is a modern, warm and friendly family-run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine, a fantastic à la carte menu, and seasonal daily specials. We offer al fresco dining and can cater for any size of party, with a private dining area for parties up to eight people</p>
-          <Link to="/menu" className="content__button" >View Menus</Link>
+          <h2>Family Run Since <br/>1997</h2>
+          <p className="content__body">From first opening its doors, Dante and Nancy Margiotta set out to create a warm, friendly restaurant where people could come and enjoy authentic Italian dishes and 22 years later we still stick to our roots but with a modern twist.</p>
+          <Link to="/about" className="content__button" >More About Us</Link>
         </aside> 
       </div>
     </section>
@@ -93,6 +91,9 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     wall1: file(relativePath: { eq: "wall1.jpg" }) {
+      ...fluidImage
+    }
+    wall2: file(relativePath: { eq: "wall2.jpg" }) {
       ...fluidImage
     }
   }
