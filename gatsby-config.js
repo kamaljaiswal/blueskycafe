@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Dantes`,
-    description: `Dantes restaurant Edinburgh`,
+    description: `Dantes is a family run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine and a fantastic à la carte menu.`,
     author: `@crollacreations`,
   },
   plugins: [

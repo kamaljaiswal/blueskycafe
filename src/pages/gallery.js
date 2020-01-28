@@ -41,6 +41,7 @@ const GalleryPage = () => {
 
   return (
     <Layout>
+      <SEO title="Gallery" />
       <div className="galleryContainer">
         <div className="text-row">
           <h2>Private Functions and Parties</h2>

@@ -8,7 +8,7 @@ const DrinksMenu = () => {
 
   return (
     <Layout>
-      <SEO title="Main Menu" />
+      <SEO title="Drinks Menu" />
       <div className="menuContainer">
         <MenuNav/>
         <div className="menu">
