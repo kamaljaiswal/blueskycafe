@@ -14,8 +14,7 @@ const ContactPage = () => {
       <div className="contact">
         <h2 className="contact__title">Contact Us</h2>
         <span className="contact__body">0131 441 7427</span>
-        <span className="contact__body">sandro@dantesrestaurant.co.uk</span>
-        <span className="contact__body">fabio@dantesrestaurant.co.uk</span>
+        <span className="contact__body">dantesedinburgh@gmail.com</span>
       </div>
       <div className="table">
         <h2 className="table__title">Opening Hours</h2>
