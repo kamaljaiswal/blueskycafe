@@ -7,7 +7,8 @@ const Footer = () => (
       <div className="contactFooter">
         <h2 className="contactFooter__title">Contact Us</h2>
         <span className="contactFooter__body">0131 441 7427</span>
-        <span className="contactFooter__body">dantesedinburgh@gmail.com</span>
+        <span className="contactFooter__body">sandro@dantesrestaurant.co.uk</span>
+        <span className="contactFooter__body">fabio@dantesrestaurant.co.uk</span>
       </div>
       <div className="hoursFooter">
         <h2 className="hoursFooter__title">Opening Hours</h2>
