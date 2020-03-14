@@ -27,9 +27,9 @@ const ContactPage = () => {
         </ul>
         <ul className="table__hours">
           <li>Closed</li>
-          <li>17:30 - 22:00</li>
-          <li>12:00 - 14:00 <br/> 17:30 - 21:30</li>
-          <li>12:00 - 14:00 <br/> 17:00 - 20:15</li>
+          <li>17:30 - 21:00</li>
+          <li>12:00 - 14:00 <br/> 17:30 - 21:00</li>
+          <li>12:00 - 14:00 <br/> 17:00 - 20:00</li>
         </ul>
       </div>
     </section>
