@@ -1,11 +1,39 @@
-import React from "react"
-import { Link, graphql } from 'gatsby'
+import React, {useState} from "react"
+import { Link, graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
 import LeafletMap from '../components/leafletmap'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Modal from "react-modal";
+
+Modal.setAppElement(`#___gatsby`);
+
+const modalStyles = {
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0, 0.90)",
+    zIndex: '100' 
+  },
+  content: {
+    position: "relative",
+    top: "50px",
+    left: "auto",
+    right: "auto",
+    bottom: "auto",
+    width: "90%",
+    maxWidth: "960px",
+    margin: "32px auto",
+    padding: '10px',
+    border: "20px solid #292B3B"
+  }
+};
 
 const IndexPage = ({data}) => {
+
+  // Modal stuff.
+  const [modalOpen, setModalOpen] = useState(true);
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   return (
   <Layout>
@@ -15,6 +43,36 @@ const IndexPage = ({data}) => {
         <Img fluid={data.pork.childImageSharp.fluid}/>
       </div>
     </section>
+    <Modal
+        isOpen={modalOpen}
+        onRequestClose={closeModal}
+        style={modalStyles}
+        contentLabel="Modal"
+    >
+      <div>
+        <Link 
+          to='/'
+          onClick={e => {
+            e.preventDefault();
+            closeModal();
+          }}
+          className='modal-button'   
+        >
+          Close
+        </Link>
+        <div className='modal-body'>
+          <h4>TAKEAWAY SERVICES AVAILABLE - FOOD & WINE</h4>
+          <p>In light of the PM’s news conference yesterday, we’ve decided to increase our takeaway services, starting from tonight (Tuesday 17th March).</p>
+
+          <p>As of now, our full menu - pizza, pasta, and a la carte - is available to takeaway at a 25% discount, and wine by the bottle is available at a 40% discount. Orders are available from 5pm, Tuesday - Sunday, and if you can’t make it to us to collect, we’ll deliver locally as much as we can. To make an order, call us on 0131 441 7427. Payment can be made over the phone or cash on delivery.</p>
+          
+          <p>We’ve been feeding the Colinton community for 23 years, and you can count on us to look after you now, too. We're so grateful for any support in this difficult time.</p>
+          
+          <span>Take care, and keep safe.</span>
+          <span>The Dantes team</span>
+        </div>
+      </div>
+    </Modal>
     <div className="intro">
       <div className="container">
         
