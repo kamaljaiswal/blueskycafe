@@ -6,7 +6,7 @@ import MenuNav from '../components/menuNav'
 
 const TakeawayMenu = () => (
   <Layout>
-    <SEO title="Main Menu" />
+    <SEO title="Takeaway Menu" />
     <div className="menuContainer">
       <MenuNav/>
       <div className="menu">
@@ -71,7 +71,7 @@ const TakeawayMenu = () => (
 
         <div className="menuList">
           <h3>PRIMI</h3>
-          <span className="menuListInfo">Gluten free pasta availableon request. Half portions of certain pastas available on request</span>
+          <span className="menuListInfo">Gluten free pasta available on request.</span>
           <div className="lineBreak"></div>
           <div className="menuItemsContainer">
             <div className="menuItems">
@@ -139,7 +139,7 @@ const TakeawayMenu = () => (
             <div className="menuItems">
               <div className="menuItem">
                   <span className="menuItem__name">Agnello al Funghi</span>
-                  <p className="menuItem__description">Lamb rump with Jerusalem artichoke puree, chestnut mushrooms and red wine reduction</p>
+                  <p className="menuItem__description">Lamb rump with chestnut mushrooms and red wine reduction</p>
                   <span className="menuItem__price">14.50</span>
               </div>
               <div className="menuItem">
