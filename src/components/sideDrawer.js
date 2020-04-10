@@ -9,7 +9,7 @@ const SideDrawer = ({ menuOpen }) => {
     <nav className={menuClass}>
       <ul className="sideNavbar">
         <li><Link to='/' activeClassName="active" >Home</Link></li>
-        <li><Link to='/menu' activeClassName="active">Menu</Link></li>
+        <li><Link to='/takeaway' activeClassName="active">Menu</Link></li>
         <li><Link to='/gallery' activeClassName="active">Gallery</Link></li>
         <li><Link to='/about' activeClassName="active">About</Link></li>
         <li><Link to='/contact' activeClassName="active">Contact</Link></li>
