@@ -27,7 +27,7 @@ const Header = ({ siteTitle, parentCallback }) => {
     <div className="desktopMenu">
       <nav>
         <span><Link to="/about">About</Link></span>
-        <span><Link to="/menu">Menu</Link></span>
+        <span><Link to="/takeaway">Menu</Link></span>
         <span><Link to="/" className="logo">{siteTitle}</Link></span>
         <span><Link to="/gallery">Gallery</Link></span>
         <span><Link to="/contact">Contact</Link></span>

@@ -79,7 +79,7 @@ const IndexPage = ({data}) => {
         <aside className="content">
           <h2>Modern Italian<br/>Cooking</h2>
           <p className="content__body">Dantes is a family run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine, a fantastic à la carte menu, and seasonal daily specials. We offer al fresco dining and can cater for any size of party, with a private dining area for parties up to eight people</p>
-          <Link to="/menu" className="content__button" >View Menus</Link>
+          <Link to="/takeaway" className="content__button" >View Menus</Link>
         </aside>
         <div className="gallery">
           <Img fluid={data.pastaPortrait.childImageSharp.fluid} className="img1"/>
