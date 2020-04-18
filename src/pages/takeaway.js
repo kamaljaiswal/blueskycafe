@@ -264,6 +264,27 @@ const TakeawayMenu = () => (
           </div>
         </div>
 
+        <div className="menuList">
+          <h3>DESSERTS</h3>
+          <div className="lineBreak"></div>
+          <div className="menuItemsContainer">
+            <div className="menuItems">
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Tiramisu</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Sticky Toffee Pudding</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">White Chocolate Profiteroles</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </Layout>
