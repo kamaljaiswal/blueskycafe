@@ -61,9 +61,15 @@ const IndexPage = ({data}) => {
           Close
         </Link>
         <div className='modal-body'>
-          <h4>PHONE LINES DOWN</h4>
-          <p>So sorry for the inconvenience but our phone lines are down temporarily due to a technical fault. Please call us on <a href="tel:+447545049228">07545049228</a> in the meantime and we'll update you as soon as it's solved. Apologies to anyone who has struggled to get through!
-          </p>
+          <h4>TAKEAWAY SERVICES AVAILABLE - FOOD & WINE</h4>
+          <p>In light of the PM’s news conference yesterday, we’ve decided to increase our takeaway services, starting from tonight (Tuesday 17th March).</p>
+
+          <p>As of now, our full menu - pizza, pasta, and a la carte - is available to takeaway at a 25% discount, and wine by the bottle is available at a 40% discount. Orders are available from 5pm, Tuesday - Sunday, and if you can’t make it to us to collect, we’ll deliver locally as much as we can. To make an order, call us on 0131 441 7427. Payment can be made over the phone or cash on delivery.</p>
+
+          <p>We’ve been feeding the Colinton community for 23 years, and you can count on us to look after you now, too. We're so grateful for any support in this difficult time.</p>
+
+          <span>Take care, and keep safe.</span>
+          <span>The Dantes team</span>
         </div>
       </div>
     </Modal>
