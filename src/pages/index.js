@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { Link, graphql, navigate } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import LeafletMap from '../components/leafletmap'
 import Layout from "../components/layout"
@@ -61,12 +61,12 @@ const IndexPage = ({data}) => {
           Close
         </Link>
         <div className='modal-body'>
-          <h4>TAKEAWAY SERVICES AVAILABLE - FOOD & WINE</h4>
-          <p>In light of the PM’s news conference yesterday, we’ve decided to increase our takeaway services, starting from tonight (Tuesday 17th March).</p>
+          <h4>TAKEAWAY SERVICES NOW AVAILABLE - FOOD, WINE & COCKTAILS</h4>
+          <p>Until we can welcome you all back into the restaurant, please enjoy Dantes at home! Takeaways are available Tuesday - Sunday from 5pm. Please check our takeaway menu to see all available dishes with takeaway prices. Wine is also available at a 30% discount, and we're now offering takeaway cocktails, too. </p>
 
-          <p>As of now, our full menu - pizza, pasta, and a la carte - is available to takeaway as well as the wine list. Orders are available from 5pm, Tuesday - Sunday, and if you can’t make it to us to collect, we’ll deliver locally as much as we can. To make an order, call us on 0131 441 7427. Payment can be made over the phone or cash on delivery.</p>
+          <p>To order, please call the restaurant on 0131 441 7427 from 2.30pm onwards, Tues-Sun. Please note, we are currently unable to take orders over email/Facebook.</p>
 
-          <p>We’ve been feeding the Colinton community for 23 years, and you can count on us to look after you now, too. We're so grateful for any support in this difficult time.</p>
+          <p>We're so grateful for all the support we've had in this difficult time, and so glad we can continue keeping Colinton well fed. 23 years and counting! </p>
 
           <span>Take care, and keep safe.</span>
           <span>The Dantes team</span>

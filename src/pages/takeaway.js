@@ -285,6 +285,48 @@ const TakeawayMenu = () => (
           </div>
         </div>
 
+        <div className="menuList">
+          <h3>COCKTAILS</h3>
+          <div className="lineBreak"></div>
+          <div className="menuItemsContainer">
+            <div className="menuItems">
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Lemon Drop Martini</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Disarrono Sour</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Espresso Martini</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Negroni</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+            </div>
+            <div className="dottedLine"></div>
+            <div className="menuItems">
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">French Martini</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+              <div className="menuItem menuItem--noDescription">
+                  <span className="menuItem__name">Cosmopolitan</span>
+                  <span className="menuItem__price">5.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="menuList">
+          <h3>WINE</h3>
+          <span className="menuListInfo">All of our wine is available at a 30% discount. Please check our wine list for options.</span>
+          <div className="lineBreak"></div>
+        </div>
+
       </div>
     </div>
   </Layout>
