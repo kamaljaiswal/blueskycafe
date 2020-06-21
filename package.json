@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-sharp": "^2.3.6",
     "leaflet": "^1.6.0",
+    "netlify-cms": "^2.10.51",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
