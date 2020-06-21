@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: feat/cms # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -10,3 +10,15 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
