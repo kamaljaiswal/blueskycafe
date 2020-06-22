@@ -2,12 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import MenuNav from '../components/menuNav'
+import SEO from "../components/seo"
 
 
 const MidWeekMenu = ({ data }) => {
   
   return (
     <Layout>
+      <SEO title="Mid-Week Menu" />
       <section className="menuContainer">
         <MenuNav />
         <div className="menu">
