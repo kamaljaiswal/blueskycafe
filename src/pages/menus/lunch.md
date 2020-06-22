@@ -6,9 +6,9 @@ menu:
       description: Chef’s homemade soup of the day
     - title: Insalata Pera Formaggio
       description: Pear and goats cheese salad
-    - title: Bruschetta Hand
-      description: Stretched flat bread with cherry tomatoes, red onion, olive oil and
-        garlic
+    - title: Bruschetta
+      description: Hand stretched flat bread with cherry tomatoes, red onion, olive
+        oil and garlic
     - title: Calamari
       description: Fresh calamari rings dusted with paprika and served with a zesty
         citrus mayonnaise
