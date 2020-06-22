@@ -20,5 +20,5 @@ collections:
         label: "Lunch Menu"
         name: "lunch"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lunch-page"}
+          - {label: "Template Key", name: "templateKey", widget: "string", default: "lunch-page"}
           - {label: "Menu", name: "menu", widget: object, fields: [{label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}, {label: Secondi, name: secondi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
