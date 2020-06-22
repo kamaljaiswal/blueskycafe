@@ -58,10 +58,6 @@ export const lunchQuery = graphql`
             title
             description
           }
-          secondi {
-            title
-            description
-          }
         }
       }
     }
