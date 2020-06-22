@@ -120,6 +120,7 @@
           .menuItems {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             .menuItem {
               margin-top: 20px;
               width: 25%;

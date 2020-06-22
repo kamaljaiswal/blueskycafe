@@ -22,3 +22,9 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "string", default: "lunch-page"}
           - {label: "Menu", name: "menu", widget: object, fields: [{label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}, {label: Secondi, name: secondi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
+      - file: "src/pages/menus/mid-week.md"
+        label: "Mid-Week Menu"
+        name: "mid-week"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "string", default: "mid-week-menu"}
+          - {label: "Menu", name: "menu", widget: object, fields: [{label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}, {label: Secondi, name: secondi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}

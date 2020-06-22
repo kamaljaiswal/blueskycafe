@@ -4,14 +4,15 @@ import Layout from '../components/layout'
 import MenuNav from '../components/menuNav'
 
 
-const LunchPage = ({ data }) => {
+const MidWeekMenu = ({ data }) => {
   
   return (
     <Layout>
       <section className="menuContainer">
         <MenuNav />
         <div className="menu">
-          <span className="menuInfo">Two courses £11.50</span>
+          <span className="menuInfo">Two courses £17.00</span>
+          <span className="menuInfo">Available Tuesday, Wednesday, Thursday</span>
           <section className="menuList">
             <h3>PRIMI</h3>
             <div className="lineBreak"></div>
@@ -47,9 +48,9 @@ const LunchPage = ({ data }) => {
   )
 }
 
-export const lunchQuery = graphql`
+export const midweekQuery = graphql`
   {
-    markdownRemark(frontmatter: {templateKey: {eq: "lunch-page"}}) {
+    markdownRemark(frontmatter: {templateKey: {eq: "mid-week-menu"}}) {
       id
       frontmatter {
         templateKey
@@ -68,4 +69,4 @@ export const lunchQuery = graphql`
   }
 `
 
-export default LunchPage
+export default MidWeekMenu
