@@ -117,7 +117,7 @@ menu:
       description: Tomato and goats cheese topped with chargrilled chicken and
         finished with rocket and balsamic glaze
       price: "9.50"
-  corntorni:
+  contorni:
     - title: Sautéed spinach in garlic butter
       price: "3.00"
       description: placeholder
