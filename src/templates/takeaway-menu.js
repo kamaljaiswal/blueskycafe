@@ -94,9 +94,8 @@ const TakeawayMenu = ({ data }) => {
             <div className="menuItemsContainer">
               <div className="menuItems">
                 {data.markdownRemark.frontmatter.menu.contorni.map((item) => (
-                  <div className="menuItem">
+                  <div className="menuItem menuItem--noDescription">
                     <span className="menuItem__name">{item.title}</span>
-                    <p className="menu_Item__description">{item.description}</p>
                     <span className="menuItem__price">{item.price}</span>
                   </div>
                 ))}
@@ -109,7 +108,7 @@ const TakeawayMenu = ({ data }) => {
             <div className="menuItemsContainer">
               <div className="menuItems">
                 {data.markdownRemark.frontmatter.menu.desserts.map((item) => (
-                  <div className="menuItem">
+                  <div className="menuItem menuItem--noDescription">
                     <span className="menuItem__name">{item.title}</span>
                     <span className="menuItem__price">{item.price}</span>
                   </div>
@@ -123,7 +122,7 @@ const TakeawayMenu = ({ data }) => {
             <div className="menuItemsContainer">
               <div className="menuItems">
                 {data.markdownRemark.frontmatter.menu.cocktails.map((item) => (
-                  <div className="menuItem">
+                  <div className="menuItem menuItem--noDescription">
                     <span className="menuItem__name">{item.title}</span>
                     <span className="menuItem__price">{item.price}</span>
                   </div>
@@ -171,7 +170,6 @@ export const takeawayQuery = graphql`
           }
           contorni {
             title
-            description
             price
           }
           desserts {
