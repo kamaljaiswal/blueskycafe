@@ -28,6 +28,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
+    <span><a href="https://www.dantesrestaurant.co.uk/admin/">Admin</a></span>
     <span>website by <a href="https://www.crollacreations.com/">crollacreations</a></span>
   </footer>
 )
