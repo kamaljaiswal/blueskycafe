@@ -139,7 +139,7 @@ const TakeawayMenu = ({ data }) => {
 
 export const takeawayQuery = graphql`
   {
-    markdownRemark(frontmatter: {templateKey: {eq: "mid-week-menu"}}) {
+    markdownRemark(frontmatter: {templateKey: {eq: "takeaway-menu"}}) {
       id
       frontmatter {
         templateKey
