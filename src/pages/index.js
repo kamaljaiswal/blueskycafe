@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
             Close
           </Link>
           <div className="modal-body">
-            <h4>OPENING SOON </h4>
+            <h4>RESUMING SOON </h4>
             {/* <p>
               Until we can welcome you all back into the restaurant, please
               enjoy Dantes at home! Takeaways are available Tuesday - Sunday
@@ -102,9 +102,9 @@ const IndexPage = ({ data }) => {
               cater for any size of party, with a private dining area for
               parties up to eight people
             </p>
-            <Link to="/menus/takeaway" className="content__button">
+            {/* <Link to="/menus/takeaway" className="content__button">
               View Menus
-            </Link>
+            </Link> */}
           </aside>
           <div className="gallery">
             <Img
@@ -143,7 +143,7 @@ const IndexPage = ({ data }) => {
             Please call the restaurant for <br />
             reservations
           </p>
-          <span>0131 441 7427</span>
+          <span>+91-3322522958</span>
         </div>
       </section>
       <section className="findUs container">

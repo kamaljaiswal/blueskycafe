@@ -45,7 +45,10 @@ const GalleryPage = () => {
       <div className="galleryContainer">
         <div className="text-row">
           <h2>Private Functions and Parties</h2>
-          <p>We can accommodate parties of any size and have a private dining area which can seat up to 8 people.</p>
+          <p>
+            We can accommodate parties of any size and have a private dining
+            area.
+          </p>
         </div>
         <div className="gallery-row">
           <Img
@@ -53,9 +56,18 @@ const GalleryPage = () => {
             key={node.id}
             alt={node.name.replace(/-/g, " ").substring(2)}
           />
-          <img src={require('../images/chevron.png')} alt="chevron" onClick={() => handlePrevious()} className="chevron-left chevron" />
-          <img src={require('../images/chevron.png')} alt="chevron" onClick={() => handleNext()} className="chevron-right chevron" />
-          
+          <img
+            src={require("../images/chevron.png")}
+            alt="chevron"
+            onClick={() => handlePrevious()}
+            className="chevron-left chevron"
+          />
+          <img
+            src={require("../images/chevron.png")}
+            alt="chevron"
+            onClick={() => handleNext()}
+            className="chevron-right chevron"
+          />
         </div>
       </div>
     </Layout>

@@ -27,9 +27,7 @@ const AboutPage = ({ data }) => {
           <h2>We go way back.</h2>
           <p>
             Our restaurant has not always been as it seems with its history
-            going far back. In 1973 Dante and Nancy Margiotta’s first venture
-            into Colinton came in the form of The Snuff Box, a sweetie shop
-            which occupied half of the space of the current restaurant today.
+            going far back.
           </p>
         </div>
         <figure className="shops">
@@ -40,21 +38,20 @@ const AboutPage = ({ data }) => {
         </figure>
         <div className="container">
           <p>
-            The shop was later expanded into the ironmongers next door when its
-            owner decided to retire and insisted the Margiotta’s enlarge their
-            business onto his premise. They could not afford the upfront costs
-            however came to the agreement to pay £17 a week until the debt was
-            collected. Without this act of kindness, Dantes as it is today may
-            never have come into existence.
+            With appetising meals at budget-friendly prices, Blue Sky Cafe on
+            Sudder Street is one of the go-to cafes for city folks and
+            travellers alike. It's a regular cafe with colourful interiors and
+            basic, comfortable seating arrangement but serves a scrumptious
+            affair.
           </p>
-          <p>
+          {/* <p>
             It wasn’t until 1997 until the next major change would occur in The
             Snuff Box being transformed into the business most people know it as
             today, Dantes. In 2019 Dante and Nancy still play a major role in
             the restaurant with Nancy still making her infamous sticky toffee
             pudding and other sweet treats and Dante still cooking in the
             kitchen.
-          </p>
+          </p> */}
         </div>
         <div className="aboutGrid">
           <div className="row">
@@ -81,10 +78,16 @@ const AboutPage = ({ data }) => {
             <div className="block">
               <h2>Our food</h2>
               <p>
-                Our diners can expect fresh traditional Italian cuisine with a
-                modern twist, all served in a warm, welcoming environment. With
-                seasonal daily specials and a fantastic à la carte menu there is
-                something for everyone.
+                You'll be spoilt for choice with pizzas, pastas, salads, soups,
+                Thai dishes and steaks. We'd suggest you try the Farm House
+                Steak and the Baked Fish. The pastas are really good too - Alla
+                Busera (pasta cooked with tiger prawns in a spicy sauce) and
+                Green Garlic Spaghetti (spaghetti with broccoli, mushroom,
+                spinach, fresh basil and herbs) are must-haves. Love Thai food?
+                Go for the Jai Thai Flat Noodles available in both veg and
+                non-veg options. Pair it up with any of the green or red curries
+                and you're all set. With seasonal daily specials and a fantastic
+                à la carte menu there is something for everyone.
               </p>
             </div>
             <figure>
