@@ -54,7 +54,7 @@ const AboutPage = ({ data }) => {
           </p> */}
         </div>
         <div className="aboutGrid">
-          <div className="row">
+          {/* <div className="row">
             <div className="block">
               <h2>It Runs in the Family</h2>
               <p>
@@ -73,7 +73,7 @@ const AboutPage = ({ data }) => {
                 Left to right: Remo, Fabio and Sanrdo. Photo: Ian Boyter
               </figcaption>
             </figure>
-          </div>
+          </div> */}
           <div className="row">
             <div className="block">
               <h2>Our food</h2>

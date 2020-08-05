@@ -15,7 +15,7 @@ class LeafletMap extends React.Component {
   }
 
   static defaultProps = {
-    position: [14.696265, 121.057148],
+    position: [22.558126, 88.353084],
     zoom: 18,
     markerText: "Sudder Street, New Market Area, Dharmatala, Kolkata",
   }
