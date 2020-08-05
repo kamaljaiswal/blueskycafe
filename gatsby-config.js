@@ -1,15 +1,15 @@
-const dotenv = require('dotenv')
+const dotenv = require("dotenv")
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   dotenv.config()
 }
 
 module.exports = {
   siteMetadata: {
-    title: `Dantes`,
-    description: `Dantes is a family run Italian restaurant in the heart of Colinton, Edinburgh. Our fully-licensed restaurant offers a great range of traditional Italian cuisine and a fantastic à la carte menu.`,
-    author: `crollacreations`,
-    siteUrl: `https://www.dantesrestaurant.co.uk`,
+    title: `BlueSkyCafe`,
+    description: `BlueSkyCafe is a family run restaurant in the heart of Kolkata, India. Our fully-licensed restaurant offers a great range of traditional  cuisine and a fantastic à la carte menu.`,
+    author: `kamal`,
+    siteUrl: `https://www.theblueskycafe.in`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,10 +22,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     `gatsby-transformer-remark`,
@@ -51,10 +51,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-leaflet',
+      resolve: "gatsby-plugin-react-leaflet",
       options: {
-        linkStyles: true
-      }
+        linkStyles: true,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -64,7 +64,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
