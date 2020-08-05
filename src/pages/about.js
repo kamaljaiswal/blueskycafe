@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => {
         <div className="overlayContainer">
           <div className="overlay">
             <h1 className="overlay__title">
-              A family run restaurant since 1997
+              A family run restaurant since 1980
             </h1>
           </div>
         </div>
