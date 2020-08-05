@@ -90,17 +90,16 @@ const IndexPage = ({ data }) => {
         <div className="container">
           <aside className="content">
             <h2>
-              Modern Italian
+              Modern Fusion
               <br />
               Cooking
             </h2>
             <p className="content__body">
-              Dantes is a family run Italian restaurant in the heart of
-              Colinton, Edinburgh. Our fully-licensed restaurant offers a great
-              range of traditional Italian cuisine, a fantastic à la carte menu,
-              and seasonal daily specials. We offer al fresco dining and can
-              cater for any size of party, with a private dining area for
-              parties up to eight people
+              With appetising meals at budget-friendly prices, Blue Sky Cafe on
+              Sudder Street is one of the go-to cafes for city folks and
+              travellers alike. It's a regular cafe with colourful interiors and
+              basic, comfortable seating arrangement but serves a scrumptious
+              affair.
             </p>
             {/* <Link to="/menus/takeaway" className="content__button">
               View Menus
@@ -121,13 +120,12 @@ const IndexPage = ({ data }) => {
           <aside className="content">
             <h2>
               Family Run Since <br />
-              1997
+              1980
             </h2>
             <p className="content__body">
-              From first opening its doors, Dante and Nancy Margiotta set out to
-              create a warm, friendly restaurant where people could come and
-              enjoy authentic Italian dishes and 22 years later we still stick
-              to our roots but with a modern twist.
+              From sandwiches and burgers to aloo parathas and Chinese food,
+              Blue Sky Cafe serves all you need to satiate those crazy hunger
+              pangs. And located in the heart of Kolkata.
             </p>
             <Link to="/about" className="content__button">
               More About Us
