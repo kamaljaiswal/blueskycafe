@@ -152,14 +152,11 @@ const IndexPage = ({ data }) => {
             Where To Find <br /> Us
           </h2>
           <span className="content__address">
-            48-50 Bridge Road Colinton, EH13 0LQ
+            Sudder St,New Market Area, Dharmatala, Kolkata
           </span>
-          <p className="content__body">
-            Free parking available in front of the restaurant with bus links
-            with services 10, 16 and 400
-          </p>
+          {/* <p className="content__body">Free parking available</p> */}
           <a
-            href="https://goo.gl/maps/FGipk86ehdi1Rmj47"
+            href="https://goo.gl/maps/GgnACaFmKK51wTVZ9"
             rel="noreferrer"
             className="content__button"
           >
